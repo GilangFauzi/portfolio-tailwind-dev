@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/style.css">
-    <title>My Portfolio</title>
+    <title>Gilang ❤ Intan</title>
     <script>
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark')
@@ -17,6 +17,7 @@
     </script>
 </head>
 <body>
+      
     <!-- Header Start -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
@@ -34,23 +35,23 @@
                     <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px]  w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:shadow-slate-700">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#home" class="text-base flex text-dark py-2 mx-8 group-hover:text-primary dark:text-white">Beranda</a>
+                                <a href="#home" class="text-base flex text-dark py-2 mx-8 group-hover:text-primary dark:text-white">Home</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base flex text-dark py-2 mx-8 group-hover:text-primary dark:text-white">About Me</a>
+                                <a href="#about" class="text-base flex text-dark py-2 mx-8 group-hover:text-primary dark:text-white">About</a>
                             </li>
-                            <li class="group">
+                            <!-- <li class="group">
                                 <a href="#portfolio" class="text-base flex text-dark py-2 mx-8 group-hover:text-primary dark:text-white">Portfolio</a>
-                            </li>
-                            <li class="group">
+                            </li> -->
+                            <!-- <li class="group">
                                 <a href="#clients" class="text-base flex text-dark py-2 mx-8 group-hover:text-primary dark:text-white">Clients</a>
-                            </li>
+                            </li> -->
                             <li class="group">
-                                <a href="#blog" class="text-base flex text-dark py-2 mx-8 group-hover:text-primary dark:text-white">Blog</a>
+                                <a href="#blog" class="text-base flex text-dark py-2 mx-8 group-hover:text-primary dark:text-white">Our Memories</a>
                             </li>
-                            <li class="group">
+                            <!-- <li class="group">
                                 <a href="#contact" class="text-base flex text-dark py-2 mx-8 group-hover:text-primary dark:text-white">Contact</a>
-                            </li>
+                            </li> -->
                             <li class="flex items-center pl-8 mt-3 lg:mt-0">
                                 <div class="flex">
                                     <span class="mr-2 text-sm text-slate-500 dark:text-white">Light</span>
@@ -76,16 +77,42 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 font-inter lg:w-1/2">
-                    <h1 class="text-base font-semibold text-primary dark:text-blue-500 lg:text-2xl lg:mt-9 lg:right-0">Hallo Everybody 👋, saya <span class="block text-dark text-4xl mt-1 lg:text-5xl dark:text-white">Gilang Fauzi</span></h1>
-                    <h2 class="text-secondary text-lg mb-5 lg:text-2xl">Software Engineer & <span class="text-secondary">IoT Engineer</span></h2>
-                    <p class="text-slate-400 mb-10 leading-relaxed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro placeat a libero soluta commodi dolore. Debitis ducimus maiores officiis corrupti.</p>
+                    <h1 class="text-base font-semibold text-primary dark:text-blue-500 lg:text-2xl lg:mt-9 lg:right-0">Hallo Everybody 👋 <span class="block text-dark text-4xl mt-1 lg:text-4xl dark:text-white">Gilang Fauzi ❤ Intan Sapira</span></h1>
+                    <h2 class="text-secondary text-lg mb-5 lg:text-2xl">All Our Memories Together</h2>
+                    <p class="text-slate-400 mb-10 leading-relaxed">This is our website, which was created specifically to store our memories together and will always be visible to everyone</p>
+                    <audio id="myAudio" class="hidden" controls>
+                        <source src="dist/music/music.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                      </audio>
+                      
+                      <script>
+                      document.addEventListener('DOMContentLoaded', function() {
+                        var audio = document.getElementById('myAudio');
+                        audio.currentTime = 112;
 
-                    <a href="" class="font-semibold bg-primary text-white py-3 px-8 rounded-full hover:shadow-md hover:opacity-90 transition duration-300 ease-in-out dark:bg-gradient-to-r dark:from-cyan-500 dark:to-blue-500">Download CV</a>
+                        // Cek apakah media bisa dijalankan otomatis
+                        var promise = audio.play();
+
+                        if (promise !== undefined) {
+                            promise.catch(function(error) {
+                                // Autoplay tidak diizinkan, mulai pemutaran saat pengguna berinteraksi
+                                document.addEventListener('click', function() {
+                                    audio.play();
+                                });
+                            });
+                        }
+                    });
+
+
+                        
+                      </script>
+                      
+                    <a href="https://www.instagram.com/secretgis.24/" target="_blank" class="font-semibold bg-primary text-white py-3 px-8 rounded-full hover:shadow-md hover:opacity-90 transition duration-300 ease-in-out dark:bg-gradient-to-r dark:from-cyan-500 dark:to-blue-500">Our social media</a>
                 </div>
 
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="mt-8 relative lg:mt-8 lg:right-0">
-                        <img src="dist/img/animasi.png" alt="Gilang Fauzi" class="max-w-full max-h-[500px] mx-auto relative z-10 group">
+                        <img src="dist/img/love.png" alt="Gilang Fauzi" class="max-w-full max-h-[500px] mx-auto relative z-10 group">
                         <span class="absolute -bottom-9 left-1 lg:translate-x-36 translate-x-3 md:translate-x-32 md:scale-125 transition">
                             <svg width="400" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <linearGradient id="myGradient" gradientTransform="rotate(120)">
@@ -118,12 +145,12 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
-                    <h4 class="font-bold uppercase text-primary dark:text-blue-500 text-lg mb-3">Tentang Saya</h4>
-                    <h2 class="font-semibold font-dark text-3xl mb-5 max-w-xl lg:text-4xl dark:text-white">Yuk, Kita menari di atas penderitaan!</h2>
+                    <h4 class="font-bold uppercase text-primary dark:text-blue-500 text-lg mb-3">About the two of us</h4>
+                    <h2 class="font-semibold font-dark text-3xl mb-5 max-w-xl lg:text-4xl dark:text-white">I love you more than you know</h2>
                     <p class="text-base text-secondary max-w-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas possimus, eligendi unde officia nihil harum delectus nesciunt deserunt non ipsum!</p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
-                    <h3 class="text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Mari Berteman</h3>
+                    <h3 class="text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Our Journey</h3>
                     <p class="text-base lg:text-lg text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo porro, magni voluptas similique recusandae dolore incidunt perspiciatis nihil.</p>
 
                     <div class="flex items-center">
@@ -151,7 +178,7 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start -->
-        <section id="portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-dark">
+        <!-- <section id="portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-dark">
             <div class="container">
                 <div class="w-full px-4">
                     <div class="max-w-xl mx-auto text-center mb-16">
@@ -191,11 +218,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     <!-- Portfolio Section End -->
 
     <!-- Clients Section Start -->
-    <section id="clients" class="pt-36 pb-32 dark:bg-slate-800">
+    <!-- <section id="clients" class="pt-36 pb-32 dark:bg-slate-800">
         <div class="container">
             <div class="w-full px-4">
                 <div class=" mx-auto text-center mb-16">
@@ -219,7 +246,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Clients Section End -->
 
     <!-- Blog Section Start -->
@@ -227,8 +254,8 @@
             <div class="container">
                 <div class="w-full px-4">
                     <div class="max-w-xl mx-auto text-center mb-16">
-                        <h4 class="font-semibold text-lg text-primary dark:text-blue-500 mb-2">Blog</h4>
-                        <h2 class="font-bold text-dark text-3xl mb-4 sm:text-3xl md:text-4xl lg:text-5xl dark:text-white">Tulisan Terkini</h2>
+                        <h4 class="font-semibold text-lg text-primary dark:text-blue-500 mb-2">Our Memories</h4>
+                        <h2 class="font-bold text-dark text-3xl mb-4 sm:text-3xl md:text-4xl lg:text-5xl dark:text-white">Gilang 💖 Intan</h2>
                         <p class="text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus tenetur repudiandae saepe velit, omnis recusandae a vero reiciendis? Modi?</p>
                     </div>  
                 </div>
@@ -236,9 +263,10 @@
                 <div class="flex flex-wrap">
                     <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                         <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-slate-700">
-                            <img src="https://source.unsplash.com/360x200?programming" alt="" class="w-full">
+                            <img src="dist/img/lovely/1.jpg" alt="" class="w-full">
+                            <!-- <img src="https://source.unsplash.com/360x200?programming" alt="" class="w-full"> -->
                             <div class="py-8 px-6">
-                                <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Tips Belajar Programming</a></h3>
+                                <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Tabligh Akbar Irmas At'Taqwa</a></h3>
                                 <p class="font-medium text-secondary text-base mb-4 dark:text-slate-300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, expedita!</p>
                                 <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-md hover:opacity-90 hover:shadow-md dark:bg-gradient-to-r from-cyan-500 to-blue-500">Baca Selengkapnya</a>
                             </div>
@@ -246,9 +274,10 @@
                     </div>
                     <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                         <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-slate-700">
-                            <img src="https://source.unsplash.com/360x200?programming" alt="" class="w-full">
+                            <!-- <img src="https://source.unsplash.com/360x200?programming" alt="" class="w-full"> -->
+                            <img src="dist/img/lovely/2.jpg" alt="" class="w-full bg-contain h-[530px]">
                             <div class="py-8 px-6">
-                                <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Develope IoT</a></h3>
+                                <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Menggunakan Baju Couple</a></h3>
                                 <p class="font-medium text-secondary text-base mb-4 dark:text-slate-300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, expedita!</p>
                                 <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-md hover:opacity-90 hover:shadow-md dark:bg-gradient-to-r from-cyan-500 to-blue-500">Baca Selengkapnya</a>
                             </div>
@@ -256,9 +285,10 @@
                     </div>
                     <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                         <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10 dark:bg-slate-700">
-                            <img src="https://source.unsplash.com/360x200?programming" alt="" class="w-full">
+                            <!-- <img src="https://source.unsplash.com/360x200?programming" alt="" class="w-full"> -->
+                            <img src="dist/img/lovely/3.jpg" alt="" class="w-full">
                             <div class="py-8 px-6">
-                                <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Installasi Windows</a></h3>
+                                <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">HUT RI 17 Agustus 2023</a></h3>
                                 <p class="font-medium text-secondary text-base mb-4 dark:text-slate-300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, expedita!</p>
                                 <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-md hover:opacity-90 hover:shadow-md dark:bg-gradient-to-r from-cyan-500 to-blue-500">Baca Selengkapnya</a>
                             </div>
@@ -270,7 +300,7 @@
     <!-- Blog Section End -->
 
     <!-- Contact Section Start -->
-        <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
+        <!-- <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
             <div class="container">
                 <div class="w-full px-4">
                     <div class="max-w-xl mx-auto text-center mb-16">
@@ -300,13 +330,13 @@
                     </div>
                 </form>
             </div>
-        </section>
+        </section> -->
     <!-- Contact Section End -->
 
     <!-- Footer Section Start -->
         <footer class="bg-dark pt-24 pb-12">
             <div class="container">
-                <div class="flex flex-wrap">
+                <!-- <div class="flex flex-wrap">
                     <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
                         <h2 class="font-bold text-4xl text-white mb-5">Contact Us</h2>
                         <p class="font-bold text-4xl text-white mb-3">Hubungi Kami</p>
@@ -351,7 +381,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="w-full pt-10 border-t border-slate-700">
                     <div class="flex items-center justify-center mb-5 text-white">
@@ -372,7 +402,7 @@
                             <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
                          </a>
                     </div>
-                    <p class="font-medium text-sm text-slate-500 text-center">Dibuat dengan <span class="text-pink-500">❤</span> Gilang Fauzi, menggunakan TailwindCSS.</p>
+                    <p class="font-medium text-sm text-slate-500 text-center">Dibuat oleh Gilang Fauzi✨.</p>
                 </div>
             </div>
         </footer>
