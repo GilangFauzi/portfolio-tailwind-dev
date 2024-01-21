@@ -84,37 +84,14 @@
                         <source src="dist/music/music.mp3" type="audio/mp3">
                         Your browser does not support the audio tag.
                       </audio>
-                      
-                      <script>
-                      document.addEventListener('DOMContentLoaded', function() {
-                        var audio = document.getElementById('myAudio');
-                        audio.currentTime = 184;
-
-                        // Cek apakah media bisa dijalankan otomatis
-                        var promise = audio.play();
-
-                        if (promise !== undefined) {
-                            promise.catch(function(error) {
-                                // Autoplay tidak diizinkan, mulai pemutaran saat pengguna berinteraksi
-                                document.addEventListener('click', function() {
-                                    audio.play();
-                                });
-                            });
-                        }
-                    });
-
-
-                        
-                      </script>
-                      
                     <a href="https://www.instagram.com/secretgis.24/" target="_blank" class="font-semibold bg-primary text-white py-3 px-8 rounded-full hover:shadow-md hover:opacity-90 transition duration-300 ease-in-out dark:bg-gradient-to-r dark:from-cyan-500 dark:to-blue-500">Our social media</a>
                 </div>
 
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="mt-8 relative lg:mt-8 lg:right-0">
-                        <img src="dist/img/love.png" alt="Gilang Fauzi" class="max-w-full max-h-[500px] mx-auto relative z-10 group">
+                        <img src="dist/img/love.png" alt="Gilang Fauzi" class="max-w-full max-h-[400px] mx-auto relative z-10 group">
                         <span class="absolute -bottom-9 left-1 lg:translate-x-36 translate-x-3 md:translate-x-32 md:scale-125 transition">
-                            <svg width="400" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="300" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <linearGradient id="myGradient" gradientTransform="rotate(120)">
                                     <stop offset="12%" stop-color="cyan" style="filter: hue-rotate(1000deg);" />
                                     <stop offset="80%" stop-color="blue" />

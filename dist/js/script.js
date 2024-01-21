@@ -44,4 +44,21 @@ darkToggle.addEventListener('click', function(){
 // Change position toggle in mode 
 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) darkToggle.checked = true;
 else darkToggle.checked = false;
+
+document.addEventListener('DOMContentLoaded', function() {
+  var audio = document.getElementById('myAudio');
+  audio.currentTime = 184;
+
+  // Cek apakah media bisa dijalankan otomatis
+  var promise = audio.play();
+
+  if (promise !== undefined) {
+      promise.catch(function(error) {
+          // Autoplay tidak diizinkan, mulai pemutaran saat pengguna berinteraksi
+          document.addEventListener('click', function() {
+              audio.play();
+          });
+      });
+  }
+});
   
